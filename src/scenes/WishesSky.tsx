@@ -63,20 +63,7 @@ export const WishesSky: React.FC<WishesSkyProps> = ({ onNext, playFirework, play
   };
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '80px 20px 90px',
-        position: 'relative',
-        zIndex: 10,
-        textAlign: 'center'
-      }}
-    >
+    <div className="scene-layout" style={{ textAlign: 'center' }}>
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}

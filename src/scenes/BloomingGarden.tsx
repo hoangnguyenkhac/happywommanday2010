@@ -23,19 +23,7 @@ export const BloomingGarden: React.FC<BloomingGardenProps> = ({ onNext, playChim
   const allExplored = openedPetals.length >= giftConfig.petals.length;
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '80px 20px 90px',
-        position: 'relative',
-        zIndex: 10
-      }}
-    >
+    <div className="scene-layout">
       {/* Scene Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -70,8 +58,8 @@ export const BloomingGarden: React.FC<BloomingGardenProps> = ({ onNext, playChim
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '30px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+          gap: '24px',
           width: '100%',
           maxWidth: '1000px',
           alignItems: 'center',

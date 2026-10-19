@@ -36,14 +36,21 @@ export const App: React.FC = () => {
 
   const reducedMotion = useReducedMotion();
 
+  // Scroll to top immediately whenever current scene transitions
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+  }, [currentScene]);
+
   return (
     <div
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '100vh',
+        minHeight: '100dvh',
         overflowX: 'hidden',
-        backgroundColor: '#16040d'
+        backgroundColor: '#16040d',
+        display: 'flex',
+        flexDirection: 'column'
       }}
     >
       {/* Dynamic luxury background layers */}

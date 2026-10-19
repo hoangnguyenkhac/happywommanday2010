@@ -16,22 +16,21 @@ export const ProgressDots: React.FC<ProgressDotsProps> = ({
 
   return (
     <div
+      className="progress-dots-container"
       style={{
         position: 'fixed',
-        bottom: '24px',
+        bottom: 'calc(16px + env(safe-area-inset-bottom, 0px))',
         left: '50%',
         transform: 'translateX(-50%)',
         zIndex: 40,
         display: 'flex',
         alignItems: 'center',
-        gap: '12px',
-        padding: '10px 18px',
-        background: 'rgba(30, 7, 18, 0.65)',
+        background: 'rgba(30, 7, 18, 0.75)',
         backdropFilter: 'blur(16px)',
         WebkitBackdropFilter: 'blur(16px)',
-        border: '1px solid rgba(231, 200, 137, 0.25)',
+        border: '1px solid rgba(231, 200, 137, 0.28)',
         borderRadius: '30px',
-        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.45)'
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.5)'
       }}
     >
       {SCENES.map((scene, idx) => {

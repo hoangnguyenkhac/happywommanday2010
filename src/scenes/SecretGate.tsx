@@ -26,15 +26,8 @@ export const SecretGate: React.FC<SecretGateProps> = ({ onUnlock, playChime, sta
 
   return (
     <div
+      className="scene-layout"
       style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        padding: '24px 20px',
         textAlign: 'center',
         userSelect: 'none'
       }}
@@ -144,8 +137,8 @@ export const SecretGate: React.FC<SecretGateProps> = ({ onUnlock, playChime, sta
           className="animate-pulse-glow"
           style={{
             position: 'relative',
-            width: '160px',
-            height: '160px',
+            width: 'clamp(125px, 35vw, 160px)',
+            height: 'clamp(125px, 35vw, 160px)',
             borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
@@ -157,10 +150,12 @@ export const SecretGate: React.FC<SecretGateProps> = ({ onUnlock, playChime, sta
           }}
         >
           <Heart
-            size={76}
+            size={68}
             color="#e7c889"
             fill="url(#goldGradientHeart)"
             style={{
+              width: '45%',
+              height: '45%',
               filter: 'drop-shadow(0 4px 15px rgba(231, 200, 137, 0.7))'
             }}
           />

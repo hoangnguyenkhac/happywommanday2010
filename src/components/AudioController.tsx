@@ -11,8 +11,8 @@ export const AudioController: React.FC<AudioControllerProps> = ({ isPlaying, onT
     <div
       style={{
         position: 'fixed',
-        top: '20px',
-        right: '20px',
+        top: 'calc(14px + env(safe-area-inset-top, 0px))',
+        right: 'clamp(12px, 3vw, 20px)',
         zIndex: 50
       }}
     >

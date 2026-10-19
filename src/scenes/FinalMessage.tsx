@@ -10,20 +10,7 @@ interface FinalMessageProps {
 
 export const FinalMessage: React.FC<FinalMessageProps> = ({ onReplay, playSparkle }) => {
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '80px 20px 90px',
-        position: 'relative',
-        zIndex: 10,
-        textAlign: 'center'
-      }}
-    >
+    <div className="scene-layout" style={{ textAlign: 'center' }}>
       {/* Delicate floating gold heart */}
       <motion.div
         initial={{ scale: 0.6, opacity: 0 }}

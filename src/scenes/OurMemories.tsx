@@ -22,19 +22,7 @@ export const OurMemories: React.FC<OurMemoriesProps> = ({ onNext, playChime }) =
   };
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '80px 20px 90px',
-        position: 'relative',
-        zIndex: 10
-      }}
-    >
+    <div className="scene-layout">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -66,8 +54,8 @@ export const OurMemories: React.FC<OurMemoriesProps> = ({ onNext, playChime }) =
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '28px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+          gap: '24px',
           width: '100%',
           maxWidth: '1080px',
           marginBottom: '36px'

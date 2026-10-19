@@ -43,20 +43,7 @@ export const GrandReveal: React.FC<GrandRevealProps> = ({ onNext, playSparkle, p
   }, [playFirework]);
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '70px 20px 90px',
-        position: 'relative',
-        zIndex: 10,
-        textAlign: 'center'
-      }}
-    >
+    <div className="scene-layout" style={{ textAlign: 'center' }}>
       {/* Background radial highlight */}
       <div
         style={{
@@ -97,13 +84,13 @@ export const GrandReveal: React.FC<GrandRevealProps> = ({ onNext, playSparkle, p
         initial={{ scale: 0.5, opacity: 0, filter: 'blur(12px)' }}
         animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-        style={{ position: 'relative', margin: '10px 0 20px' }}
+        style={{ position: 'relative', margin: '10px 0 20px', width: '100%' }}
       >
         <h1
           className="shimmer-text"
           style={{
             fontFamily: 'var(--font-serif)',
-            fontSize: 'clamp(5.5rem, 18vw, 12rem)',
+            fontSize: 'clamp(3.8rem, 16vw, 11rem)',
             fontWeight: 800,
             lineHeight: 0.95,
             letterSpacing: '-0.02em',

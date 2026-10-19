@@ -30,19 +30,7 @@ export const LoveLetter: React.FC<LoveLetterProps> = ({ onNext, playSparkle, pla
   };
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '80px 20px 90px',
-        position: 'relative',
-        zIndex: 10
-      }}
-    >
+    <div className="scene-layout">
       {/* Scene Header */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -96,7 +84,7 @@ export const LoveLetter: React.FC<LoveLetterProps> = ({ onNext, playSparkle, pla
               style={{
                 width: '100%',
                 maxWidth: '520px',
-                height: '320px',
+                height: 'clamp(260px, 65vw, 320px)',
                 position: 'relative',
                 display: 'flex',
                 flexDirection: 'column',
@@ -296,7 +284,7 @@ export const LoveLetter: React.FC<LoveLetterProps> = ({ onNext, playSparkle, pla
                     style={{
                       color: signatureGlow ? '#e7c889' : '#651b36',
                       display: 'inline-block',
-                      fontSize: '3.2rem',
+                      fontSize: 'clamp(2.4rem, 7vw, 3.2rem)',
                       textShadow: signatureGlow
                         ? '0 0 25px rgba(231,200,137,0.9)'
                         : '0 2px 10px rgba(0,0,0,0.1)'
