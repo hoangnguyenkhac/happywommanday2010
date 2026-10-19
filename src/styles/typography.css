@@ -1,0 +1,75 @@
+/* Typography styles */
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.heading-display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.heading-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.heading-subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-champagne);
+  letter-spacing: 0.04em;
+}
+
+.body-lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+  color: #f7e4bd;
+  font-weight: 300;
+}
+
+.body-romantic {
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  line-height: 1.8;
+  color: var(--color-pearl);
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+
+.calligraphic-signature {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--color-champagne-light);
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(231, 200, 137, 0.6);
+}
+
+.badge-luxury {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(231, 200, 137, 0.12);
+  border: 1px solid rgba(231, 200, 137, 0.4);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-champagne);
+  font-weight: 500;
+}
